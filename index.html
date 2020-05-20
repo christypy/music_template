@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- <title>Booking Form HTML Template</title> -->
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap1.min.css" />
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style1.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	<script src="https://no2js.azurewebsites.net/adminlte231/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+
+	<!-- noslider -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.1/nouislider.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.1/nouislider.min.js"></script>
+</head>
+
+<body>
+	<div id="booking" class="section">
+
+		<div class="section-center">
+
+			<div class="container">
+
+				<div class="row">
+					<div class="booking-form">
+						<form>
+
+							<div class="row">
+								<h2 class="text-white text-center" style="
+								padding-bottom: 20px;">華語流行音樂</h2>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">歌手</span>
+										<input class="form-control" type="text" placeholder="歌手名稱">
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">歌名</span>
+										<input class="form-control" type="text" placeholder="歌曲名稱">
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">專輯名稱</span>
+										<input class="form-control" type="text" placeholder="專輯名稱">
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">歌詞</span>
+										<input class="form-control" type="text" placeholder="歌詞關鍵字">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">作詞人</span>
+										<input class="form-control" type="text" placeholder="作詞人">
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">作曲人</span>
+										<input class="form-control" type="text" placeholder="作詞人">
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">語言</span>
+										<select class="form-control">
+											<option>國語</option>
+											<option>台語</option>
+											<option>客語</option>
+											<option>粵語</option>
+											<option>英語</option>
+											<option>日語</option>
+											<option>韓文</option>
+											<option>多語言</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">年份</span>
+										<div id="divRange"></div>
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-btn">
+										<!-- <button class="submit-btn">搜尋</button> -->
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-btn">
+										<!-- <button class="submit-btn">搜尋</button> -->
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-btn">
+										<!-- <button class="submit-btn">搜尋</button> -->
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-btn">
+										<button class="submit-btn">搜尋</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+<script>
+	var rangeFoo = document.getElementById('divRange');
+
+	noUiSlider.create(rangeFoo, {
+		start: [1937, 2020],
+		animate: true,
+		step: 1,
+		range: {
+			'min': 1937,
+			'max': 2020
+		}
+	});
+</script>
+
+</html>
